@@ -81,6 +81,11 @@ board_pins[5] = D5; // Servo S5
 board_pins[6] = D2; // Servo S6
 board_pins[7] = D3; // Servo S7
 ````
+At the end, i take the most parts from Sergei robot, but I build it whith a ESP8266, that its semst to be a bad idee, because the pins 9 and 10 are no able to run whith the Distance Sensor. I prepare another versions with ESP32, Arduino Uno, the have more digitals pins, and i want to try whit the Arduino-Nano-WiFi, because ist smaller. For the moment, this robot run very well with ESP8266 but no sensors.
+
+The second Voltage Regulator for 5v for the servos is really not necessary, i draw it in my first plan, but the Servos run very well with direct connection to the 7.3V batterie.
+
+![Kamelion Quadruped_Steckplatine](https://github.com/xastherion/Camello/assets/16471969/0bc6e907-17ca-42df-8fff-36a7f4d1afda)
 
 ## License
 This project was build upon the great work from [JavierIH](https://github.com/JavierIH/miniKame)
