@@ -47,3 +47,22 @@ while True:
     loop()
     time.sleep(0.1)  # Añadir un pequeño retraso para evitar que el bucle se ejecute demasiado rápido
 ```
+##################################################################
+class CommandExecutor:
+    def __init__(self):
+        self.robot = None
+        self.running = False
+        self.autonomous = False
+
+    def init(self, kame):
+        self.robot = kame
+
+    def parseCommand(self, command):
+        if command == "autonomous":
+            self.autonomous = True
+        else:
+            # Implementa el manejo de otros comandos según sea necesario
+            pass
+
+    def isAutonomous(self):
+        return self.autonomous
